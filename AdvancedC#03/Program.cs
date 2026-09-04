@@ -55,6 +55,41 @@ namespace AdvancedC_03
             //}
 
             #endregion
+
+            #region Exercise 2
+
+            /* Create a leaderboard that automatically sorts players by score.*/
+
+            ////Add: 500 = "Ahmed", 200 = "Sara", 800 = "Ali", 350 = "Mona"
+            //SortedDictionary<int, string> board = new SortedDictionary<int, string>(); // عملت سيرش و طلعلي حلين يا اما بال LINQ او السورتيد ديكشنري 
+            //board[500] = "Ahmed";
+            //board[200] = "Sara";
+            //board[800] = "Ali";
+            //board[350] = "Mona";
+
+            ////Print all entries (they should be sorted by score automatically)
+            //foreach(KeyValuePair<int,string> i in board)
+            //{
+            //    Console.WriteLine($"Score: {i.Key}, Player: {i.Value}");
+            //}
+
+            ////Access the first key and first value 
+            //Console.WriteLine($"first key = {board.First().Key}, first value = {board.First().Value}");
+
+            ////Check if score 500 exists
+            //Console.WriteLine($"Score 500 exists? {board.ContainsKey(500)}");
+
+            ////Safely get the player with score 999
+            //Console.WriteLine(board.TryGetValue(999,out string rs)? $"Player with score 999: {rs}" : "Player with score 999 not found");
+
+            ////Remove the player with score 200 and print the updated list
+            //board.Remove(200);
+            //foreach (KeyValuePair<int, string> i in board)
+            //{
+            //    Console.WriteLine($"Score: {i.Key}, Player: {i.Value}");
+            //}
+
+            #endregion
         }
     }
 }
