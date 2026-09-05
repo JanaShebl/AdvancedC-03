@@ -90,6 +90,71 @@ namespace AdvancedC_03
             //}
 
             #endregion
+
+            #region Exercise 3
+
+            /* Build a phone book application.*/
+
+            ////Create a Collection  with 4 contacts (name → phone number)
+            //Dictionary<string, string> phoneBook = new Dictionary<string, string>
+            //{
+            //    { "Alice", "123-456-7890" },
+            //    { "Bob", "987-654-3210" },
+            //    { "Charlie", "555-555-5555" },
+            //    { "David", "111-222-3333" }
+            //};
+
+            ////Add a new contact using [] syntax (add or update)
+            //phoneBook["Jane"] = "444-555-6666";
+
+            ////Try adding a duplicate using .Add() — catch the exception and print the error
+            //try
+            //{
+            //    phoneBook.Add("Alice", "000-000-0000");
+
+            //}
+            //catch(Exception ex) 
+            //{
+            //        Console.WriteLine($"Error: {ex.Message}");
+            //}
+
+            //    //Try adding a duplicate using .TryAdd() — print whether it succeeded
+            //    if (phoneBook.TryAdd("Alice", "000-000-0000"))
+            //{
+            //    Console.WriteLine("Contact added successfully.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Failed to add contact.");
+            //}
+
+            ////Search for a contact that doesn’t exist
+            //if (phoneBook.TryGetValue("Ahmed",out string name))
+            //{
+            //    Console.WriteLine($"Contact found: {name}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Contact not found.");
+            //}
+
+            ////Get a contact with a fallback of "Not Found"
+            //// مش فاهمة السؤال عايز ايه
+
+            ////Print all Keys on one line, then all Values on another line
+            //foreach(KeyValuePair<string, string> k in phoneBook)
+            //{
+            //    Console.Write($"{k.Key} - ");
+            //}
+            //Console.WriteLine();
+
+            //foreach(KeyValuePair<string, string> k in phoneBook)
+            //{
+            //    Console.Write($"{k.Value} , ");
+            //}
+            //Console.WriteLine();
+
+            #endregion
         }
     }
 }
