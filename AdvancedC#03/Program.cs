@@ -205,6 +205,16 @@ namespace AdvancedC_03
             Console.WriteLine($"Is {{1,2}} a subset of Set A? {st.IsSubsetOf(setA)}");
 
             #endregion
+
+            #region Search
+
+            // span<T> => نوع خفيف بيتعامل مع الميموري على طول من غير ما يضطر يدخل ال heap بيخلي الاداء احسن و بيقلل وجود ال garbage collector
+
+            // sortedlist => بيخزن ال data على شكل two arrays واحد لل keys و واحد لل values و بيخلي ال keys sorted بياخد مساحة اقل في الميموري و اسرع في السيرش بس ابد انك تعرف ال index بتاع ال key اللي انت عايزه
+
+            // SortedDictionary => بيخزن الداتا على شكل binary tree و سريع في الاضافة و الحذف بس بياخد مساحة اكتر في الميموري و مش بعرف ال index بتاع ال key اللي انت عايزه
+
+            #endregion
         }
     }
 }
